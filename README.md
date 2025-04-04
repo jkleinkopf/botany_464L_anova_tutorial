@@ -184,7 +184,7 @@ capture.output(emm_cont %>% pairs(adjust = "tukey") %>% print(), file = "height_
 
 <img width="1459" alt="image" src="https://github.com/user-attachments/assets/2f313c4b-4470-427c-a2d9-fb3148734292" /><br>
 
-We can see that the p-value for each pairwise comparison (for initial height) is >0.05, which tells us there are no differenes between the means for each group. The figure on the right also shows us the same thing. The last line, `capture.output(emm_cont %>% pairs(adjust = "tukey") %>% print(), file = "height_initial_cm_anova.txt")` will save the results of the Tukey HSD test to our files.
+We can see that the p-value for each pairwise comparison (for initial height) is >0.05, which tells us there are no differences between the means for each group. The figure on the right also shows us the same thing. The last line, `capture.output(emm_cont %>% pairs(adjust = "tukey") %>% print(), file = "height_initial_cm_anova.txt")` will save the results of the Tukey HSD test to our files.
 
 # Part 6: Graphing our results
 The last step is to graph our results. We want to build a figure we can include in our greenhouse experiment final paper for each response variable of interest. We want to include all of our observations for the variable of interest (points), box-plots, a global mean (red dotted line), and treatment group means (diamonds). Then, we want to save our figure to our files. Let's do this by running lines 93-128.
