@@ -148,6 +148,8 @@ hist(mydata$height_initial_cm)
 
 We know our variances are equal, and our data look pretty good (the histogram on the left), but if I saw something like the right-skewed histogram on the right, with a long tail, I would consider taking the log of that values for that variable (or you could square root the values) to see if that helps us meet our assumption of equal variances. You can run line 61 to do this, which will create a new variable called `height_initial_cm_log`, which is simply `height_initial_cm` but log-transformed. If you do this, you will have to replace every instance of `height_initial_cm` with `height_initial_cm_log` and re-run lines 35-48. 
 
+**_You should keep track of the steps you take throughout hypothesis testing for each of your response variables. If your data are already normally distributed and have equal variances, then you should make a note of that. If your data are not normal or do not have equal variances, make a note of that. If you remove any outliers or transform your data, make a note of that too! These will be important things to include in the methods section of your paper._**
+
 # Part 4: Interpreting our results
 Once your data meet the three assumptions above, we can take a look at our ANOVA results. Let's run lines 67-68 to print and save the output of the ANOVA. 
 
@@ -244,7 +246,7 @@ To do so, you should re-load your data (Part 1) and replace **all** instances of
 Then, do all of the parts and steps to analyze your data. At the end, you should have an ANOVA results file, Tukey HSD results file, and a figure for each response variable of interest. **Remember to change the filenames and figure titles/axis labels to reflect the response variable of interest!!!** Otherwise, you will have a hard time keeping track of which is which.
 
 # Consolidating your data into tables
-The results of your ANOVAs (e.g., `growth_cm_anova.txt`) and Tukey HSD (`growth_cm_tukey.txt`) from all of your variables will be incorporated into two tables. For the ANOVA table, you will include the Df, Sums of Squares, Mean Squares, F value, and p-value for each variable. For the Tukey HSD table, you will only include the p-values for the pairwise comparisons. Your tables will look like the examples below, but will include `growth_cm` and results of the ANOVA using the other variables.
+The results of your ANOVAs (e.g., `growth_cm_anova.txt`) and Tukey HSD (`growth_cm_tukey.txt`) from all of your variables will be incorporated into two tables. For the ANOVA table, you will include the Df, Sums of Squares, Mean Squares, F value, and p-value for each variable. For the Tukey HSD table, you will only include the p-values for the pairwise comparisons. Your tables will look like the examples below (but completed for all three of your variables).
 
 <img width="1047" alt="image" src="https://github.com/user-attachments/assets/015b85ea-4dfd-4305-baf7-ea7d293cac3a" /> <br>
 
