@@ -14,7 +14,7 @@ We're going to run our analyses in R. If you have the desktop version of R Studi
 
 <img width="963" alt="image" src="https://github.com/user-attachments/assets/79ca4d77-7630-47d4-9f83-5d600264db10" /><br>
 
-Save the file [BotanyANOVA_2025_updated.R](BotanyANOVA_2025_updated.R) to your desktop, and then upload it and your data file (here I am calling it `data.csv` to your R studio project. To do so, you should click the small yellow circle with the white 'up' arrow in the panel in the bottom right. After you upload your files, they will appear in the list of files in the same panel. Click on the R script (BotanyANOVA_2025_updated.R), which will open it in the upper left panel.
+Save the file [BotanyANOVA_2025_updated.R](BotanyANOVA_2025_updated.R) to your desktop, and then upload it and your data file (here I am calling it [data.csv](data.csv)) to your R studio project. To do so, you should click the small yellow circle with the white 'up' arrow in the panel in the bottom right. After you upload your files, they will appear in the list of files in the same panel. Click on the R script (BotanyANOVA_2025_updated.R), which will open it in the upper left panel.
 
 <img width="940" alt="image" src="https://github.com/user-attachments/assets/5b71061b-d913-463d-9c09-f0c5f61cc6cf" /><br>
 
