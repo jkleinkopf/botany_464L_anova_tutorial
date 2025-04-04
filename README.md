@@ -12,9 +12,14 @@ Once our data looks good, let's create a new column to the right of `height_fina
 ### Step 2: Setting up R Studio and loading the data
 We're going to run our analyses in R. If you have the desktop version of R Studio, feel free to use that. However, we will use the [cloud version of R studio which you can access here](https://login.posit.cloud/login?redirect=%2F). After you make an account, click "new project" and select "New RStudio Project" from the dropdown menu. You can give your new project a name, if you wish.
 
-<img width="963" alt="image" src="https://github.com/user-attachments/assets/79ca4d77-7630-47d4-9f83-5d600264db10" />
+<img width="963" alt="image" src="https://github.com/user-attachments/assets/79ca4d77-7630-47d4-9f83-5d600264db10" /><br>
 
-Save the file [BotanyANOVA_2025_updated.R](BotanyANOVA_2025_updated.R) to your desktop, and then upload it and your data file (here I am calling it `data.csv` to your R studio project. To do so, you should click the small yellow circle with the white 'up' arrow 
+Save the file [BotanyANOVA_2025_updated.R](BotanyANOVA_2025_updated.R) to your desktop, and then upload it and your data file (here I am calling it `data.csv` to your R studio project. To do so, you should click the small yellow circle with the white 'up' arrow in the panel in the bottom right. After you upload your files, they will appear in the list of files in the same panel. Click on the R script (BotanyANOVA_2025_updated.R), which will open it in the upper left panel.
+
+<img width="940" alt="image" src="https://github.com/user-attachments/assets/5b71061b-d913-463d-9c09-f0c5f61cc6cf" /><br>
+
+
+
 
 ## Part 2:
 
