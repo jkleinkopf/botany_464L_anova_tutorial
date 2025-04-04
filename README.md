@@ -69,8 +69,6 @@ Let's go ahead and run the ANOVA on line  35. This will create a new object call
 # Part 3A: Run hypothesis tests and check assumptions ---------------------
 ### Step 1: Run an ANOVA hypothesis test:
 aov_mydata <- aov(height_initial_cm ~ treatment_group, data = mydata)
-
-aov_mydata <- aov(height_initial_cm ~ treatment_group, data = mydata)
 ``` 
 
 ## Assumptions of ANOVA
