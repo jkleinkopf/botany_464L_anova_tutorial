@@ -18,7 +18,7 @@ Save the file [BotanyANOVA_2025_updated.R](BotanyANOVA_2025_updated.R) to your d
 
 <img width="940" alt="image" src="https://github.com/user-attachments/assets/5b71061b-d913-463d-9c09-f0c5f61cc6cf" /><br>
 
-Go ahead and run lines 8-12 by clicking anywhere on the line and clicking "run" above, or command+enter (mac) or ctl+enter (PC), to install and load the packages we will use to analyze our data. This might take a minute or two. Then, let's load our data by running line 19. Make sure you change the filename from `data.csv` if yours has a different name. If it worked, you should see the data loaded in the upper right panel as `mydata`, and if you click on it, it will pop up in the upper left panel in a new tab.
+Go ahead and run lines 8-12 by clicking anywhere on the line and clicking "run" above, or command+enter (mac) or ctl+enter (PC), to install and load the packages we will use to analyze our data. This might take a minute or two. Then, let's load our data by running line 19. Make sure you change the filename from [data.csv](data.csv) if yours has a different name. If it worked, you should see the data loaded in the upper right panel as `mydata`, and if you click on it, it will pop up in the upper left panel in a new tab.
 
 ```{r}
 # Part 0: Set up the R environment ----------------------------------------
