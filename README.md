@@ -235,7 +235,7 @@ ggsave("name_initial_height_cm.png", plot = p, dpi=600, width = 8, height = 6)
 You should see a figure like this, and it will be saved in your files as `name_initial_height_cm.png`. You should modify line 123 so your name is in the filename. Congrats! You have used ANOVA to test for differences in means among treatment groups for our greenhouse experiment.
 
 # Running ANOVA on the rest of the response variables:
-This was a single example, using `height_initial_cm` as our variable of interest. We will **not** be including the ANOVA resuls, Tukey HSD results, or figure from this ANOVA analysis in our results. However, you **will** have to run the above steps using your other response variables of interest: `growth_cm`, `biomass_final_g`, and your response variable of choice (`response_3_cm`). 
+This was a single example, using `height_initial_cm` as our variable of interest. **_We will not be including the ANOVA results, Tukey HSD results, or figure from this ANOVA analysis in our results._** However, you **will** have to run the above steps using your other response variables of interest: `growth_cm`, `biomass_final_g`, and your response variable of choice (`response_3_cm`). 
 
 To do so, you should re-load your data (Part 1) and replace **all** instances of `height_initial_cm` with the other variables of interest, one at a time. One easy way you can do this is by simply using the keyboard shortcut command+f (mac) or ctl+f (pc) to find and replace all instances of `height_initial_cm` (for example, with `growth_cm`):
 
