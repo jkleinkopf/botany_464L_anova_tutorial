@@ -76,7 +76,7 @@ To use an ANOVA, we have to make sure that our data meet three assumptions:
 
 1. Independence of data
 2. Normality of data (residuals are normally distributed)
-3. Homogeneity of variances among treatment groups (the spread of data is similar among treatment groups).
+3. Homogeneity of variances among treatment groups (the spread of data is similar among treatment groups)
 
 ## Making sure our data meet the assumptions of ANOVA
 We know our data are independent, because we designed our experiment and collected our data with this in mind. However, we should use informal investigation and formal tests to determine if our data meet assumptions 2 and 3. Let's run lines 43-46 to visualize and formally test our data to see if they meet our assumptions.
