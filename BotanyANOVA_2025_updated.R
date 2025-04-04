@@ -86,7 +86,7 @@ plot(emm_cont,
      adjust = "tukey",
      horizontal = TRUE)
 
-capture.output(emm_cont %>% pairs(adjust = "tukey") %>% print(), file = "height_initial_cm_anova.txt")
+capture.output(emm_cont %>% pairs(adjust = "tukey") %>% print(), file = "height_initial_cm_tukey.txt")
 
 # Part 6: Graphing our results --------------------------------------------
 ### Build the base plot:
