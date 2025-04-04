@@ -1,15 +1,15 @@
 # Botany 464L - ANOVA Tutorial in R
 Follow along with the class slides [here](https://docs.google.com/presentation/d/1S4-4-KVPCI4bHiER66bpbaMPOLhRzXC2P3gtUWJYayM/edit?usp=sharing). 
 
-## Part 1: Cleaning and loading data
-### Step 1: Cleaning the data
+# Part 1: Cleaning and loading data
+## Step 1: Cleaning the data
 Let's check to make sure our data looks good using Excel or Google Docs. We have four quantitative variables: `height_initial_cm`, `height_final_cm`, `biomass_final_g`, and a response variable of your choice (here I am calling it `response_3_cm`). These appear to all be numbers, so we're good there. If you have characters in any of those columns, make sure those are removed or converted to numbers. We also have a categorical variable, `treatment_group`, and these should be Control (plants 1-30), Treatment1 (plants 31-60), and Treatment2 (plants 61-90). 
 
 Once our data looks good, let's create a new column to the right of `height_final_cm` called `growth_cm`. This will simply be `height_final_cm`-`height_initial_cm`. We can just type `=D2-C2` in the first empty cell to calculate the growth, and then we can fill down the column through plant 90.
 
 ![Apr-03-2025 20-50-10](https://github.com/user-attachments/assets/d9e878f3-fb37-439f-a279-8b00316aeb58)<br>
 
-### Step 2: Setting up R Studio and loading the data
+## Step 2: Setting up R Studio and loading the data
 We're going to run our analyses in R. If you have the desktop version of R Studio, feel free to use that. However, we will use the [cloud version of R studio which you can access here](https://login.posit.cloud/login?redirect=%2F). After you make an account, click "new project" and select "New RStudio Project" from the dropdown menu. You can give your new project a name, if you wish.
 
 <img width="963" alt="image" src="https://github.com/user-attachments/assets/79ca4d77-7630-47d4-9f83-5d600264db10" /><br>
@@ -26,7 +26,7 @@ mydata <- read.csv("data.csv")
 
 ![Apr-03-2025 21-16-17](https://github.com/user-attachments/assets/10134cb0-2a98-4257-9bf9-b45194e5967a)
 
-## Part 2: Informal investigation of data
+# Part 2: Informal investigation of data
 Before we analyze our data using statistical tests, let's build intuition about our data by plotting it. We will plot `treatment_group` on the x-axis, and we'll look at each response variable separately. We'll start by plotting `height_initial_cm` by treatment group. You can do this by running line 25 which should output a plot in the bottom right panel.
 
 ```
@@ -40,9 +40,9 @@ ggplot(mydata) +
 
 We can see that the initial height of plants appears to be pretty similar across treatment groups, which is what we would expect (and want!), since we haven't yet applied any simulated herbivory treatments. There does appear to be an outlier in the Control group, but we'll see if we have to deal with that later.
 
-### Part 3: Hypothesis testing
+# Part 3: Hypothesis testing
 
-### The question and hypotheses
+## The question and hypotheses
 The question we are interested in for this project is _Does (simulated) herbivory affect plant growth and/or reproduction?_ We have two hypotheses:
 
 1. **Null hypothesis**: Response means for each treatment group are not significantly different from each other.
@@ -55,14 +55,14 @@ Let's go ahead and run the ANOVA on line  35. This will create a new object call
 aov_mydata <- aov(height_initial_cm ~ treatment_group, data = mydata)
 ``` 
 
-### Assumptions of ANOVA
+## Assumptions of ANOVA
 To use an ANOVA, we have to make sure that our data meet three assumptions: 
 
 1. Independence of data
 2. Normality of data (residuals are normally distributed)
 3. Homogeneity of variances among treatment groups (the spread of data is similar among treatment groups).
 
-### Making sure our data meet the assumptions of ANOVA
+## Making sure our data meet the assumptions of ANOVA
 We know our data are independent, because we designed our experiment and collected our data with this in mind. However, we should use informal investigation and formal tests to determine if our data meet assumptions 2 and 3. Let's run lines 43-44 to visualize our data.
 
 ```
@@ -88,7 +88,7 @@ bartlett.test(height_initial_cm ~ treatment_group, data = mydata)
  
 A p-value of >0.05 tells us that our data have equal variances, so we only have to worry about getting our data to be normal (this time!).
 
-### How to deal with data that are not normally distributed or have unequal variances
+## How to deal with data that are not normally distributed or have unequal variances
 To deal with data that are non-normal or have unequal variances, there are a couple things we can do: 
 1. Identify and remove outliers
 2. Transform the response variable
