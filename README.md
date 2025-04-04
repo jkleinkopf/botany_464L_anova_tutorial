@@ -250,6 +250,5 @@ The results of your ANOVAs (e.g., `growth_cm_anova.txt`) and Tukey HSD (`growth_
 
 <img width="1047" alt="image" src="https://github.com/user-attachments/assets/015b85ea-4dfd-4305-baf7-ea7d293cac3a" /> <br>
 
-Finally, make 
-
+Make sure t save these tables and the figures to include them in your final paper. Feel free to email me with questions or concerns!
 
