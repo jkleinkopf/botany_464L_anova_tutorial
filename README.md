@@ -161,7 +161,7 @@ capture.output(summary(aov_mydata), file = "height_initial_cm_anova.txt")
 ```
 <img width="1465" alt="image" src="https://github.com/user-attachments/assets/9dc8cca9-e0f1-4faa-a999-f89600216b9a" /> <br>
 
-We can see that the p-value (`Pr(>F)`) of 0.747 is greater than 0.05, which tells us that we **cannot reject the null hypothesis**, meaning that our group means are all statistically equal. For the variable we are looking at, `height_initial_cm`, this is what we want and would expect, since plants have not yet been treated for simulated herbivory. We can also see that our ANVOA output has been saved in the files panel as `height_initial_cm_anova.txt`. 
+We can see that the p-value (`Pr(>F)`) of 0.747 is greater than 0.05, which tells us that we **cannot reject the null hypothesis**, meaning that our group means are all statistically equal. For the variable we are looking at, `height_initial_cm`, this is what we want and would expect, since plants have not yet been treated for simulated herbivory. We can also see that our ANOVA output has been saved in the files panel as `height_initial_cm_anova.txt`. 
 
 If for whatever reason you cannot get your data to be normally distributed and/or have equal variances, you can run a non-parametric version of ANOVA called the Kruskal-Wallis test. It will give you similar output that you can interpret just like the ANOVA.
 
